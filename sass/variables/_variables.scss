@@ -1,0 +1,16 @@
+:root {
+    /* Основной шрифт */
+    --main-font: Roboto;
+    /* Дополнительный шрифт */
+    --secondary-font: Raleway;
+    /* Цвет активации */
+    --active-color: #2196f3;
+    /* Цвет текста */
+    --text-color: #757575;
+    /* Цвет заголовков */
+    --text-header: #212121;
+    /* Цвет фона */
+    --back-color: #ffffff;
+    /* Анимация */
+    --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

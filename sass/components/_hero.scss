@@ -1,0 +1,49 @@
+.hero {
+    /* Бэк-граунд использую для наглядности, как дойде до фона изменю */
+    background-color: #2f303a;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.overlay {
+    max-width: 1600px;
+    max-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/overlay.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--back-color);
+}
+
+.hero-btn {
+    font-weight: 700;
+    line-height: 1.88;
+    /* identical to box height, or 187% */
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: var(--back-color);
+    background-color: var(--active-color);
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 10px 32px;
+    display: inline-block;
+    min-width: 200px;
+    margin-top: 30px;
+    transition: background-color var(--animation);
+
+    &:hover,
+    &:focus {
+    background-color: #188ce8;
+}}

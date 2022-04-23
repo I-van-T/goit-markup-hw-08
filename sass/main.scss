@@ -1,0 +1,27 @@
+// variables
+@import "../sass/variables/variables";
+
+// base style
+@import "../sass/base/base";
+
+// utils
+
+@import "../sass/utils/visually-hidden";
+
+//components
+
+@import "../sass/components/container";
+@import "../sass/components/btn";
+@import "../sass/components/header";
+@import "../sass/components/hero";
+@import "../sass/components/benefits";
+@import "../sass/components/services";
+@import "../sass/components/team";
+@import "../sass/components/clients";
+
+@import "../sass/components/portfolio/portfolio-page";
+
+@import "../sass/components//footer/footer-modul";
+
+@import "../sass/components/modal-window";
+@import "../sass/components/form/form-modul";

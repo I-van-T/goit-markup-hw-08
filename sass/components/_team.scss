@@ -1,0 +1,91 @@
+.team {
+    background-color: #f5f4fa;
+}
+
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--text-header);
+}
+
+.team-list {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.team-item {
+    margin-right: 30px;
+    background: var(--back-color);
+    /* material shadow v1 */
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    &:last-child {
+    margin-right: 0px;
+}}
+
+.team-subtitle {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.team-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--text-header);
+}
+
+.team-profession {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+    margin-top: 10px;
+}
+
+.social-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.social-item {
+    margin-right: 10px;
+    
+    &:last-child {
+    margin-right: 0px;
+}}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: #afb1b8;
+    width: 44px;
+    height: 44px;
+    background-color: var(--back-color);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: fill var(--animation), background-color var(--animation);
+
+    &:hover,
+    &:focus {
+    fill: var(--back-color);
+    background-color: var(--active-color);
+}}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+}

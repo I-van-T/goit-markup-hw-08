@@ -1,0 +1,36 @@
+.label-check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+
+.check-icon {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+    border: 2px solid var(--text-header);
+    border-radius: 4px;
+    fill: var(--back-color);
+
+.checkbox:checked+ & {
+    fill: var(--back-color);
+    background-color: var(--active-color);
+    background-origin: border-box;
+    border: var(--active-color);
+}}
+
+.form-link {
+    margin-left: 4px;
+    font-size: 14px;
+    line-height: 1.71px;
+    letter-spacing: 0.03em;
+    color: var(--active-color);
+}
