@@ -54,10 +54,6 @@ body {
   color: var(--text-color);
 }
 
-.header {
-  border-bottom: 1px solid #ececec;
-}
-
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -77,12 +73,45 @@ body {
 }
 
 .container {
-  width: 1200px;
+  max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 2px solid tomato; */
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+.menu-btn {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: transparent;
+  outline: transparent;
+}
+
+.menu-btn__icon {
+  width: 40px;
+  height: 40px;
+}
+
+.menu-btn__icon-open {
+  opacity: 1;
+}
+
+.menu-btn__icon-close {
+  opacity: 0;
 }
 
 .btn {
@@ -92,31 +121,60 @@ body {
   border: 0px;
 }
 
+.header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ececec;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
+
 .header__container {
   display: flex;
-  flex-grow: 1;
   align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .header__container {
+    justify-content: space-between;
+  }
 }
 
 .logo {
   font-family: var(--secondary-font);
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 28px;
+  line-height: 1.17;
   /* identical to box height */
   letter-spacing: 0.03em;
   color: var(--active-color);
-  margin-right: 93px;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo__studio {
-  font-family: var(--secondary-font);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  /* identical to box height */
-  letter-spacing: 0.03em;
   color: var(--text-header);
+}
+
+.nav {
+  display: none;
 }
 
 .nav__list {
@@ -166,9 +224,7 @@ body {
 }
 
 .contacts {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
+  display: none;
 }
 
 .contacts__item {
