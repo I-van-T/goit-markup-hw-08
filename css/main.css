@@ -41,9 +41,9 @@ a {
   text-decoration: none;
 }
 
-.list {
+ul {
   list-style: none;
-  padding-inline-start: 0px;
+  padding: 0px;
 }
 
 body {
@@ -165,7 +165,7 @@ body {
   border-radius: 2px;
 }
 
-.contacts__list {
+.contacts {
   display: flex;
   align-items: center;
   margin-left: auto;
