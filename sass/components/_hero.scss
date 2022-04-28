@@ -1,30 +1,62 @@
 .hero {
-    /* Бэк-граунд использую для наглядности, как дойде до фона изменю */
     background-color: #2f303a;
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    @include mq (desktop){
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+    
 }
 
 .overlay {
-    max-width: 1600px;
-    max-height: 600px;
+    max-height: 400px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/overlay.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../../images/overlay_sm.jpg);
+    @include mq (retina) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/overlay_sm@2x.jpg);
+    }
+
+    @include mq (tablet) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../../images/overlay_md.jpg);
+        
+        @include mq (retina) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/overlay_md@2x.jpg);
+    }}
+
+    @include mq (desktop) {
+        max-width: 1600px;
+        max-height: 600px;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../../images/overlay_lg.jpg);
+    
+        @include mq (retina) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/overlay_lg@2x.jpg);
+        }
+    
+}}
 
 .hero-title {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--back-color);
+
+    @include mq (desktop) {
+        font-size: 44px;
+        line-height: 1.36;
+    }
+    
 }
 
 .hero-btn {

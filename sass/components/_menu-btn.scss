@@ -4,13 +4,14 @@
     width: 40px;
     height: 40px;
     background-color: transparent;
-    border: transparent;
+    border: none;
+    padding: 0;
     outline: transparent;
     z-index: 99;
     
 
 
-    @media screen and (min-width: 768px) {
+    @include mq (tablet) {
         display: none; 
 
     }
