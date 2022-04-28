@@ -54,11 +54,6 @@ body {
   color: var(--text-color);
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -413,6 +408,22 @@ body {
   }
 }
 
+.hero__title {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--back-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
 .overlay {
   max-height: 400px;
   margin-left: auto;
@@ -455,22 +466,6 @@ body {
   }
 }
 
-.hero-title {
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 1.62;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--back-color);
-}
-
-@media screen and (min-width: 1200px) {
-  .hero-title {
-    font-size: 44px;
-    line-height: 1.36;
-  }
-}
-
 .hero-btn {
   font-weight: 700;
   line-height: 1.88;
@@ -492,17 +487,57 @@ body {
   background-color: #188ce8;
 }
 
-.benefits-list {
-  display: flex;
-  align-items: center;
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.benefits-item {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
-.benefits-item:last-child {
-  margin: 0px;
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .benefits {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.benefits__item {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .benefits__item {
+    width: 354px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.benefits__item:nth-child(2n) {
+  margin-right: 0px;
+}
+
+.benefits__item:nth-last-child(-n + 2) {
+  margin-bottom: 0px;
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits__item {
+    width: 270px;
+  }
 }
 
 .future {
@@ -510,27 +545,34 @@ body {
   justify-content: center;
   align-items: center;
   height: 120px;
-  width: 270px;
+  width: 100%;
   background-color: #f5f4fa;
   margin-bottom: 30px;
   border-radius: 4px;
 }
 
-.benefits-icon {
+.benefits__icon {
   width: 70px;
   height: 70px;
 }
 
-.benefits-title {
+.benefits__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--text-header);
+  text-align: center;
 }
 
-.benefits-text {
+@media screen and (min-width: 768px) {
+  .benefits__title {
+    text-align: left;
+  }
+}
+
+.benefits__text {
   margin-top: 10px;
 }
 
