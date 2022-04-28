@@ -25,6 +25,18 @@
     <header class="header">
       <div class="container header__container">
         <a class="logo" href="./index.html">Web<span class="logo__studio">Studio</span></a>
+        <button
+          class="menu-btn"
+          type="button"
+          aria-label="Кнопка открытия меню"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <svg class="menu-btn__icon" width="40" height="40">
+            <use class="menu-btn__icon-open" href="./images/icon.svg#icon-menu_mob_v"></use>
+            <use class="menu-btn__icon-close" href="./images/icon.svg#icon-close_mob_v"></use>
+          </svg>
+        </button>
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
@@ -358,5 +370,63 @@
         </div>
       </div>
     </footer> -->
+    <!-- Мобильное меню -->
+    <div class="mobile-overlay" data-menu>
+      <div class="mobile-menu">
+        <nav class="mobile-nav">
+          <ul class="mobile-nav__list">
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="./index.html">Студия</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mobile-contacts">
+          <ul class="mobile-contacts__list">
+            <li class="mobile-contacts__item">
+              <a class="mobile-contacts__link-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+            <li class="mobile-contacts__item">
+              <a class="mobile-contacts__link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </div>
+        <ul class="mobile-socials">
+          <li class="mobile-socials__item">
+            <a class="mobile-socials__link" href="" target="_blank" rel="noopener noreferrer"
+              >Instagram</a
+            >
+          </li>
+          <li class="mobile-socials__item"></li>
+          <li>
+            <a class="mobile-socials__link" href="" target="_blank" rel="noopener noreferrer"
+              >Twitter</a
+            >
+          </li>
+          <li class="mobile-socials__item"></li>
+          <li>
+            <a class="mobile-socials__link" href="" target="_blank" rel="noopener noreferrer"
+              >Facebook</a
+            >
+          </li>
+          <li class="mobile-socials__item"></li>
+          <li>
+            <a class="mobile-socials__link" href="" target="_blank" rel="noopener noreferrer"
+              >Linkedin</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

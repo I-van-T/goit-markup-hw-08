@@ -34,6 +34,10 @@
     }
 }
 
+.mobile-nav {
+    margin-bottom: 156px;
+}
+
 .mobile-nav__item {
     margin-bottom: 32px;
 }
@@ -53,4 +57,43 @@
     &:focus {
         color: var(--active-color);
     }
+}
+
+.mobile-contacts__item {
+    margin-bottom: 32px;
+}
+
+.mobile-contacts__link-tel {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;   
+    letter-spacing: 0.02em;
+    
+    color: var(--active-color);
+}
+
+.mobile-contacts__link {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    
+    color: var(--text-color);
+
+}
+
+.mobile-socials {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    &__link {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+        color: var(--active-color);
+    
+    }
+
 }
