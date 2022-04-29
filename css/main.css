@@ -577,10 +577,17 @@ body {
 }
 
 .services {
-  padding-top: 0px;
+  display: none;
 }
 
-.services-title {
+@media screen and (min-width: 1200px) {
+  .services {
+    display: block;
+    padding-top: 0px;
+  }
+}
+
+.services__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -589,17 +596,17 @@ body {
   color: var(--text-header);
 }
 
-.services-list {
+.services__list {
   display: flex;
   align-items: center;
   margin-top: 50px;
 }
 
-.services-item {
+.services__item {
   margin-right: 30px;
 }
 
-.services-item:last-child {
+.services__item:last-child {
   margin: 0px;
 }
 
@@ -607,7 +614,7 @@ body {
   position: relative;
 }
 
-.services-description {
+.services__description {
   position: absolute;
   bottom: 0;
   left: 0;
