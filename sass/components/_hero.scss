@@ -34,17 +34,17 @@
     background-position: center;
     background-size: cover;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(./images/overlay_sm.jpg);
+        url(../images/overlay_sm.jpg);
     @include mq (retina) {
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/overlay_sm@2x.jpg);
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/overlay_sm@2x.jpg);
     }
 
     @include mq (tablet) {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../../images/overlay_md.jpg);
+        url(../images/overlay_md.jpg);
         
         @include mq (retina) {
-            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/overlay_md@2x.jpg);
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/overlay_md@2x.jpg);
     }}
 
     @include mq (desktop) {
