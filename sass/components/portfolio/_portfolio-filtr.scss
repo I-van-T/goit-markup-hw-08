@@ -1,15 +1,36 @@
 .filtr-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  @include mq (tablet) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @include mq (desktop) {
+    margin-bottom: 50px;
+  }
+
 }
 
 .filtr-item {
   margin-right: 8px;
+  margin-bottom: 15px;
 
   &:last-child {
-  margin-right: 0px;
-}}
+  margin-right: 0px; 
+}
+
+@include mq (mobile) {
+  &:nth-last-child(-n + 2) {
+    margin-bottom: 0px;
+  }
+}
+
+  @include mq (tablet) {
+    margin-bottom: 0px;
+  }
+}
 
 .filtr-btn {
   padding: 6px 22px;
