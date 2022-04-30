@@ -6,6 +6,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.25);
     transition: opacity var(--animation), visibility var(--animation);
+    z-index: 100;
 }
 
 .backdrop.is-hidden {
@@ -19,12 +20,22 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 581px;
-    width: 528px;
+    // height: 581px;
+    width: 320px;
     background-color: var(--back-color);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 4px;
-    padding: 40px;
+    padding: 30px;
+
+    @include mq (tablet) {
+        width: 450px;
+        padding: 40px;
+    }
+
+    @include mq (desktop) {
+        width: 528px;
+        height: 581px;
+    }
 }
 
 .modal-btn {

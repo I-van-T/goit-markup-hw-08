@@ -8,3 +8,6 @@ body {
     color: var(--text-color);
 }
 
+.no-scroll {
+    overflow-y: hidden;
+}
